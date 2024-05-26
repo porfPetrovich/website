@@ -25,7 +25,7 @@ const BlogPost = () => {
     // gets the markdown files from /public/blog-posts/
     const fetchMarkdownContent = async () => {
       try {
-        const response = await fetch(`/blog-posts/${slug}.md`);
+        const response = await fetch(`${process.env.PUBLIC_URL}/blog-posts/${slug}.md`);
         const markdownContent = await response.text();
         console.log(markdownContent)
         const parsedContent = fm(markdownContent);

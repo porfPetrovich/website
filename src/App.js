@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Route, Routes } from 'react-router-dom';
 import { Box, CssBaseline, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from'./Theme';
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <ThemeProvider theme = {theme}>
-      <Router>
+      <HashRouter>
         <CssBaseline />
         <Box display="flex">
           <Grid container>
@@ -40,7 +40,7 @@ function App() {
             </Grid>
           </Grid>
         </Box>
-      </Router>
+      </HashRouter>
     </ThemeProvider>
   );
 }
