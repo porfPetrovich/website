@@ -1,0 +1,15 @@
+/* styles.css */
+.custom-image {
+    width: 50%; /* Sets the image width to 50% of its container */
+    display: block; /* Allows margin auto to center the image */
+    margin: 20px auto; /* Centers the image horizontally and adds some vertical margin */
+  }
+  
+.custom-blockquote {
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-left: 5px solid rgb(189, 188, 188);
+    background-color: rgb(241, 240, 240); 
+    font-style: italic;
+    color: #555;
+  }
