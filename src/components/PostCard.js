@@ -22,7 +22,7 @@ const PostCard = ({post, index}) => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" component={RouterLink} to={post.link}>
+            <Button size="small" component={RouterLink} to={post.link} state={{ post }}>
                 Read More
               </Button>
             </CardActions>

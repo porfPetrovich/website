@@ -1,16 +1,20 @@
 // pages/BlogPost.js
 import React, { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import fm from 'front-matter';
 
-// custom renderer for images
-const CustomImage = ({ alt, src }) => (
-  <img alt={alt} src={src} className="custom-image" />
+// Custom renderer for images
+const CustomImage = ({ node, ...props }) => (
+  <img
+    {...props}
+    style={{ display: 'block', margin: '0 auto', maxWidth: '50%' }}
+    alt={props.alt || ''}
+  />
 );
 
-// custom renderer for blockquotes
+// Custom renderer for blockquotes
 const CustomBlockquote = ({ children }) => (
   <blockquote className="custom-blockquote">
     {children}
@@ -19,15 +23,18 @@ const CustomBlockquote = ({ children }) => (
 
 const BlogPost = () => {
   const { slug } = useParams();
+  const location = useLocation();
+  const { post } = location.state || {}; // get the post object from the router state
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    // gets the markdown files from /public/blog-posts/
     const fetchMarkdownContent = async () => {
       try {
         const response = await fetch(`${process.env.PUBLIC_URL}/blog-posts/${slug}.md`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
         const markdownContent = await response.text();
-        console.log(markdownContent)
         const parsedContent = fm(markdownContent);
         setContent(parsedContent.body);
       } catch (error) {
@@ -41,10 +48,10 @@ const BlogPost = () => {
   return (
     <Box p={2} width="100%">
       <Typography variant="h2" gutterBottom>
-        Post
+        {post.text}
       </Typography>
-      <Box px={4}> {/* add padding on the left and right sides */}
-        <ReactMarkdown components={{ img: CustomImage, blockquote: CustomBlockquote  }}>
+      <Box px={4}>
+        <ReactMarkdown components={{ img: CustomImage, blockquote: CustomBlockquote }}>
           {content}
         </ReactMarkdown>
       </Box>

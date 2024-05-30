@@ -7,7 +7,7 @@ const AboutPage = () => {
     <div>
         <Typography variant='h3'>About</Typography>
         <Typography variant='body1'>
-          Coming soon.
+          Coming eventually.
         </Typography></div>
   );
 };

@@ -1,6 +1,5 @@
-# Recent Happenings in Bitcoin
-First in a series that I hope will continue. I plan on doing these sorta kinda weekly to bi-weekly.
 ## May 24
+First in a series that I hope will continue. I plan on doing these sorta kinda weekly to bi-weekly.
 ### Wall Street Purchasing ETF Exposure
 Several Major Wall Street Firms have purchased newly offered Bitcoin ETFs offered by Blackrock, Grayscale and others. Most of these purchases are likely on behalf of their clients. Morgan Hougan, CIO of Bitwise Investments, [wrote a blog post](https://experts.bitwiseinvestments.com/cio-memos/whos-buying-bitcoin-etfs-according-to-13f-filings) about professional investment firms purchasing them about a week ago. He goes through the 13f filings of the 11 publicly traded spot bitcoin ETFs and found that 563 professional investment firms reported owning 3.5 billion worth of bitcoin ETFs – but since, at the time of his writing, that Bitcoin ETFs had around 50 billion under management, that professional investors make up only about 7-10% of the total AUM for the ETFs, with the rest belonging to retail.
 

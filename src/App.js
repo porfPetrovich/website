@@ -15,8 +15,8 @@ import BlogPost from './components/BlogPost';
 function App() {
   const mainMenuItems = [
     { text: 'Home', link: '/'},
-    { text: 'About', link: '/about'},
     { text: 'Blog', link: '/blog/'},
+    { text: 'About', link: '/about'},
     { text: 'Contact', link: '/contact'},
   ]
 

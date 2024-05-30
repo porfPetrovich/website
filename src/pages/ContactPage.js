@@ -7,7 +7,7 @@ const ContactPage = () => {
     <div>
         <Typography variant='h3'>Contact</Typography>
         <Typography variant='body1'>
-          Maybe I'll need to be contacted at some point.
+          Coming eventually.
         </Typography>
     </div>
   );
