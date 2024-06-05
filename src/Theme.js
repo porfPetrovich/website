@@ -6,6 +6,9 @@ const theme = createTheme({
       fontFamily: [
         'DejaVu Sans Mono',
       ].join(','),
+      body1: {
+        marginBottom:12,
+      }
     },
   });
 
