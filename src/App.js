@@ -11,12 +11,13 @@ import AboutPage from './pages/AboutPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import BlogPost from './components/BlogPost';
+import FourOhFour from './pages/FourOhFour';
 
 function App() {
   const mainMenuItems = [
     { text: 'Home', link: '/'},
-    { text: 'Blog', link: '/blog/'},
     { text: 'About', link: '/about'},
+    { text: 'Blog', link: '/blog/'},
     { text: 'Contact', link: '/contact'},
   ]
 
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path='*' element={<FourOhFour />} />
               </Routes>
             </Grid>
           </Grid>
