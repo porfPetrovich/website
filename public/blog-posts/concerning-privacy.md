@@ -28,7 +28,7 @@ We are leaving the flat ground of rights - sovereignty over our communications, 
 I refer you here to extremely helpful moral-legal xy plane from Molly White's excellent recent [blog post](https://www.citationneeded.news/tornado-cash/) that touches many of these same topics:
 
 
-![Image](../images/mollyWhite_legalmoralplane.png)
+![Image](../images/mollyWhite_legalmoralplane.jpg)
 
 
 If it just so happens that the set of behaviours that you engage in - whether it's drug use and pornography or it's reading subversive/fifth column literature - happen to fall to the left of that legal/illegal y-axis, it is more likely because that line will have shifted rightwards. It is clearly farther right right now in countries like China, North Korea and Iran than in Europe, developed East Asia, and the Anglosphere, **but that might not always be the case**.
